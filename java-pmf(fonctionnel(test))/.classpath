@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="PMF/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/ILIES/Desktop/jfreechart-1.0.19/jfreechart-1.0.19-demo.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ILIES/Desktop/jSerialComm-1.3.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_131/lib/ext/RXTXcomm.jar"/>
+	<classpathentry kind="output" path="PMF/out/production/Fridge207"/>
+</classpath>

@@ -176,7 +176,7 @@ public class FridgeView extends JFrame implements Observer //utilisation du desi
 
 
     @Override
-    public void update(Observable o, Object arg)  //methode update du design pattern observer qui va recuperer les données actualisé du controleur
+    public void update(Observable o, Object arg)  //methode update du design pattern observer qui va recuperer les données actualisé du controleur 
     {
         componentConsigne.setText("Consigne : " + controler.getConsigneTemperature() + " °C");
         float valeurTemperature = controler.getPeltierTemperature();

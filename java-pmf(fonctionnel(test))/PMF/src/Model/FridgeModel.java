@@ -14,7 +14,7 @@ public class FridgeModel extends AbstractModel
     }
 
     @Override
-    public float getConsigneTemperature() //accesseurs sur la temperature de consigne
+    public float getConsigneTemperature() //accesseurs sur la temperature de consigne 
     { 
     	return this.consigneTemperature; 
     }

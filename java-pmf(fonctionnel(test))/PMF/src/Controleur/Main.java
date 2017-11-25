@@ -13,7 +13,7 @@ public class Main {
     
         
         
-        float consigne = controler.getConsigneTemperature();//on recupere la temperature de consigne
+        float consigne = controler.getConsigneTemperature();//on recupere la temperature de consigne 
         float tmpinte = controler.getIntTemperature(); //on recupere la temperature interne
        
        

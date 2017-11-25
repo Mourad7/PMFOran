@@ -1,7 +1,8 @@
 package Model;
 import java.util.Observable;
 
-public abstract class AbstractModel extends Observable {
+public abstract class AbstractModel extends Observable
+{
 
 	protected float consigneTemperature; //valeurConsigne
 	protected float peltierTemperature; //valeurTemperaturePeltier
@@ -10,8 +11,8 @@ public abstract class AbstractModel extends Observable {
 	protected boolean stateDoor; //booleen sur l'ouverture de porte
 	protected float valeur_rose; //valeur de de la rosee
 	protected boolean stateRunning; //booleen sur l'etat de fonctionnement
-	protected boolean heatError;
-	protected boolean roseError;
+	protected boolean heatError; //booleen sur l'erreur de chaleur pour le message d'alerte
+	protected boolean roseError; // booleen sur l'erreur de rosée pour le message d'alerte
 
 	/* 
 	 * accesseurs sur la consigne de temperature

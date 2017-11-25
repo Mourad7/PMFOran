@@ -134,7 +134,7 @@ public class FridgeControler extends AbstractControler implements ActionListener
     }
 
     @Override
-    public void keyPressed(KeyEvent e) 
+    public void keyPressed(KeyEvent e) // on verifie la consigne lorsque la touche entrée est presse
     {
         if (e.getKeyCode() == KeyEvent.VK_ENTER) 
         {

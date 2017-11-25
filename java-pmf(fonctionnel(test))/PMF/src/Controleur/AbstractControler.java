@@ -5,7 +5,8 @@ import java.awt.event.ActionEvent;
 import java.util.Observable; //importation de la librairie gerant le design pattern observeur
 
 
-public abstract class AbstractControler extends Observable {
+public abstract class AbstractControler extends Observable
+{
 	protected AbstractModel model;
 
 	public AbstractControler() {}

@@ -298,7 +298,7 @@ public class FridgeControler extends AbstractControler implements ActionListener
                 }
 
                  
-                //actualisation des données des temperatures et humidité suivant les données recus 
+                //actualisation des données des temperatures et humidité suivant les données recus  
                 model.setHygrometry(hygo); 
                 model.setInternalTemperature(tempExt);
                 model.setPeltierTemperature(tempInt);

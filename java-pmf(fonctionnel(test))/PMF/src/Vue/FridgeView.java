@@ -195,7 +195,7 @@ public class FridgeView extends JFrame implements Observer //utilisation du desi
         if (controler.getRoseError()) 
         {
             alerteContainer.add(componentAlerteCondensation);
-        }
+        } 
         else
         {
             alerteContainer.remove(componentAlerteCondensation);

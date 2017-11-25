@@ -8,7 +8,7 @@ import java.util.Observable; //importation de la librairie gerant le design patt
 public abstract class AbstractControler extends Observable
 {
 	protected AbstractModel model;
- 
+  
 	public AbstractControler() {}
 
 	public abstract void consigneDoor();

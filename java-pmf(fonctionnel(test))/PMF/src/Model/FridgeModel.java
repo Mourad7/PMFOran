@@ -29,7 +29,7 @@ public class FridgeModel extends AbstractModel
     @Override
     public float getInternalTemperature()  //accesseurs sur la temperature Interne
     {
-    	return this.internalTemperature;
+    	return this.internalTemperature; 
     }
     @Override
     public void setInternalTemperature(float internalTemperature) 

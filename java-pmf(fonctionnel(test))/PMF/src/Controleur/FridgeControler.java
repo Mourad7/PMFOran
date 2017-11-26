@@ -204,7 +204,7 @@ public class FridgeControler extends AbstractControler implements ActionListener
 
         if (portId == null) 
         {
-            System.out.println("Could not find COM port.");
+            System.out.println("aucun port serie disponible");
             return;
         }
            //si on ne trouve pas de port serie disponible on retourne un message d'erreur

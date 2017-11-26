@@ -13,7 +13,5 @@ public abstract class AbstractControler extends Observable
 
 	public abstract void consigneDoor();
 
-	public abstract void toggleDoor();
-
-	//public abstract void updateTemperature();
+	
 }

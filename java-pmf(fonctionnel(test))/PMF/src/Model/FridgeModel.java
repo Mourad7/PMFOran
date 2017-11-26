@@ -64,20 +64,6 @@ public class FridgeModel extends AbstractModel
         setChanged();
         notifyObservers();
     }
-
-    @Override
-    public boolean getStateDoor() //accesseurs du booleen sur l'etat de la porte(utilisable sur une porte automatique)
-    {
-    return stateDoor;
-    }
-    @Override
-    public void setStateDoor(boolean stateDoor) 
-    {
-        this.stateDoor = stateDoor;
-        setChanged();
-        notifyObservers();
-    }
-
     @Override
     public float getValeur_rose()  //accesseurs sur le point de rosée
     {

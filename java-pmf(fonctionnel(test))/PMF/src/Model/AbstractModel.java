@@ -35,11 +35,6 @@ public abstract class AbstractModel extends Observable
 	public abstract float  getHygrometry();
 	public abstract void setHygrometry(float hygrometry);
 	/* 
-	 * accesseurs sur l'etat de la porte
-	 */
-	public abstract boolean getStateDoor();
-	public abstract void setStateDoor(boolean stateDoor);
-	/* 
 	 * accesseurs sur valuer de rosee
 	 */
 	public abstract float getValeur_rose();

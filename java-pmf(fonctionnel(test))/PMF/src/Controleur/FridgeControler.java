@@ -58,13 +58,6 @@ public class FridgeControler extends AbstractControler implements ActionListener
     {
     	
     }
-
-    @Override
-    public void toggleDoor()
-    {
-    	
-    }
-
     public float getIntTemperature() //accesseur sur la temperature interne
     {
     	return model.getInternalTemperature();
@@ -305,7 +298,7 @@ public class FridgeControler extends AbstractControler implements ActionListener
                 model.setValeur_rose(rose);
                 
               
-                if(model.getConsigneTemperature() < tempInt) //comparaison entre la consigne et la temperature lue pour appeler la fonction on_off
+                if(model.getConsigneTemperature() < tempExt) //comparaison entre la consigne et la temperature lue pour appeler la fonction on_off
                 {
                     if(!model.getStateRunning())
                     {
@@ -375,33 +368,5 @@ public class FridgeControler extends AbstractControler implements ActionListener
     }
     
   
-  /*  Thread Thread = new Thread()
-    		{
-    	     @Override public void run()
-    	     {
-    	    	try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e1) {
-					
-					e1.printStackTrace();
-				}
-    	    	
-    	    	PrintWriter toarduino = new PrintWriter(output);
-    	    	while(true)
-    	    	{
-    	    		toarduino.print(model.getStateRunning());
-    	    		toarduino.flush();
-    	    		try {
-						Thread.sleep(1000);
-					} catch (InterruptedException e) {
-					
-						e.printStackTrace();
-					} 
-    	    		
-    	    	}
-    	     }
-    	     
-    		};
-*/
 
 }

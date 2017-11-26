@@ -28,6 +28,8 @@ public class FridgeView extends JFrame implements Observer //utilisation du desi
     int VarTemperature = 15; //variable temperature
     int x = 0; 
     
+
+    
     //creation des panels contenant des informations
     private Panel stats;
     private Panel componentUpdateState;
@@ -61,6 +63,7 @@ public class FridgeView extends JFrame implements Observer //utilisation du desi
         this.controler = controler;
 
 
+         
         Container c = getContentPane();
         c.setLayout(new BorderLayout()); //on utilise un borderlayout pour disposer les données
 
@@ -172,6 +175,9 @@ public class FridgeView extends JFrame implements Observer //utilisation du desi
         c.add(componentUpdateState, BorderLayout.CENTER);
 
         setDefaultCloseOperation(3);
+        
+        
+
     }
 
 
@@ -208,6 +214,7 @@ public class FridgeView extends JFrame implements Observer //utilisation du desi
         componentRose.setText("Point de Rosee :" + controler.getRose() + " °C");
         
     }
+    
     
     
 }

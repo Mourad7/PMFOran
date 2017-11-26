@@ -14,7 +14,7 @@ public class Main {
         
         
         float consigne = controler.getConsigneTemperature();//on recupere la temperature de consigne  
-        float tmpinte = controler.getIntTemperature(); //on recupere la temperature interne
+        float temperatureint =  controler.getIntTemperature(); //on recupere la temperature interne
        
        
         while(consigne >= 0) //on compare dans la boucle la consigne a la temperature interne et l'on eteint le module quand elle lui est inferieure
@@ -24,7 +24,7 @@ public class Main {
 			{
 				
 			
-			if(consigne > tmpinte)
+			if(consigne > temperatureint)
 			{
 				controler.on_off("1");
 			}

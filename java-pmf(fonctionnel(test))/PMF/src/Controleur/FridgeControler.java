@@ -264,8 +264,8 @@ public class FridgeControler extends AbstractControler implements ActionListener
 
 
                 float hygo = Float.valueOf(items.get(0));
-                float tempExt = Float.valueOf(items.get(1));
-                float tempInt = Float.valueOf(items.get(2));
+                float tempInt = Float.valueOf(items.get(1));
+                float tempExt = Float.valueOf(items.get(2));
                 float rose = Float.valueOf(items.get(3));
 
 
@@ -293,12 +293,12 @@ public class FridgeControler extends AbstractControler implements ActionListener
                  
                 //actualisation des données des temperatures et humidité suivant les données recus  
                 model.setHygrometry(hygo); 
-                model.setInternalTemperature(tempExt);
-                model.setPeltierTemperature(tempInt);
+                model.setInternalTemperature(tempInt);
+                model.setPeltierTemperature(tempExt);
                 model.setValeur_rose(rose);
                 
               
-                if(model.getConsigneTemperature() < tempExt) //comparaison entre la consigne et la temperature lue pour appeler la fonction on_off
+                if(model.getConsigneTemperature() < tempInt) //comparaison entre la consigne et la temperature lue pour appeler la fonction on_off
                 {
                     if(!model.getStateRunning())
                     {
@@ -326,17 +326,6 @@ public class FridgeControler extends AbstractControler implements ActionListener
      //  on_off: fonction qui allume ou eteint le module peltier
      
     
-    String retoursig;
-	
-    
-    public String getRetourSig() //accesseur sur la valeur de retour de signal
-    {
-    	return retoursig;
-    }
-    public String setRetourSig(String sig) //accesseur sur la valeur de retour de signal
-    {
-    	return sig = retoursig;
-    }
     
     public synchronized void on_off(String signal)
     {
@@ -347,17 +336,15 @@ public class FridgeControler extends AbstractControler implements ActionListener
             	
                 model.setStateRunning(true);
                 System.out.println("on");
-                setRetourSig("1");
             }
         
             else
             {
             	 model.setStateRunning(false);
                  System.out.println("off");
-                 setRetourSig("2");
             }
             String serialMessage = signal;
-            output.write(serialMessage.getBytes());
+            output.write(serialMessage.getBytes()); //envoie l'etat afin de controller l'arduino
         }
         catch (Exception e)
         {

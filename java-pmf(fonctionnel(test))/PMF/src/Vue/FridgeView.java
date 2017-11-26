@@ -210,7 +210,7 @@ public class FridgeView extends JFrame implements Observer //utilisation du desi
 
         componentPeltierTemperature.setText("Temperature Externe : " + controler.getPeltierTemperature() + " °C");
         componentInternalTemperature.setText("Temperature Interne : " + controler.getIntTemperature() + " °C");
-        componentHygrometry.setText("Humidite :" + controler.getHygro());
+        componentHygrometry.setText("Humidite :" + controler.getHygro()  + "%");
         componentRose.setText("Point de Rosee :" + controler.getRose() + " °C");
         
     }
